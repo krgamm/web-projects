@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- First box -->
+    <div class="container">
+      <div class="first-box">
+        <img id="logo" src="./images/logo.svg" alt="logo" />
+        <ul class="icons">
+          <li><img src="./images/icon-document.svg" alt="document-icon" /></li>
+          <li><img src="./images/icon-folder.svg" alt="folder-icon" /></li>
+          <li><img src="./images/icon-upload.svg" alt="upload-icon" /></li>
+        </ul>
+      </div>
+
+      <!-- Second Box -->
+
+      <div class="data-info">
+        <h1>You’ve used <b>815 GB</b> of your storage</h1>
+        <!-- <div class="amt-left"><h1>185 GB Left</h1></div> -->
+        <div id="progress-bar">
+          <div id="slider"><div class="circle"></div></div>
+        </div>
+        <h2>
+          <ul class="gbNr">
+            <li><b>0 GB</b></li>
+            <li><b>1000 GB</b></li>
+          </ul>
+        </h2>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Kevin Gammenthaler</a>.
+    </div>
+  </body>
+</html>
