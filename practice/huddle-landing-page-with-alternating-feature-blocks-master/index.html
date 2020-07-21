@@ -12,6 +12,14 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>
       Frontend Mentor | Huddle landing page with alternating feature blocks
@@ -29,11 +37,11 @@
     </style>
   </head>
   <body>
-    <nav>
-      <img id="logo-color" src="./images/logo.svg" alt="huddle-logo" />
-      <button class="white-btn">Try it Free</button>
-    </nav>
     <div class="hero">
+      <nav>
+        <img id="logo-color" src="./images/logo.svg" alt="huddle-logo" />
+        <button class="white-btn">Try it Free</button>
+      </nav>
       <div class="description">
         <h1>Build The Community Your Fans Will Love</h1>
         <p>
@@ -43,6 +51,7 @@
         </p>
         <button class="pink-btn">Get Started For Free</button>
       </div>
+      <img id="mockup" src="./images/illustration-mockups.svg" alt="" />
     </div>
 
     <!-- NEW SECTION -->
@@ -50,65 +59,69 @@
     <section>
       <ul class="content-cards">
         <li>
-          <h1>Grow Together</h1>
-          <p>
-            Generate meaningful discussions with your audience and build a
-            strong, loyal community. Think of the insightful conversations you
-            miss out on with a feedback form.
-          </p>
+          <div class="container">
+            <h1>Grow Together</h1>
+            <p>
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form.
+            </p>
+          </div>
           <img src="./images/illustration-grow-together.svg" alt="" />
         </li>
         <li>
           <img src="./images/illustration-flowing-conversation.svg" alt="" />
-          <h1>Flowing Conversations</h1>
-          <p>
-            You wouldn't paginate a conversation in real life, so why do it
-            online? Our threads have just-in-time loading for a more natural
-            flow.
-          </p>
+          <div class="container">
+            <h1>Flowing Conversations</h1>
+            <p>
+              You wouldn't paginate a conversation in real life, so why do it
+              online? Our threads have just-in-time loading for a more natural
+              flow.
+            </p>
+          </div>
         </li>
         <li>
-          <h1>Your Users</h1>
-          <p>
-            It takes no time at all to integrate Huddle with your app's
-            authentication solution. This means, once signed in to your app,
-            your users can start chatting immediately.
-          </p>
+          <div class="container">
+            <h1>Your Users</h1>
+            <p>
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+            </p>
+          </div>
           <img src="./images/illustration-your-users.svg" alt="" />
         </li>
       </ul>
-      <div class="call-to-action">
-        <h1>Ready To Build Your Community?</h1>
-        <button class="pink-btn">Get Started For Free</button>
-      </div>
     </section>
 
-    About Us What We Do FAQ Career Blog Contact Us &copy; Copyright 2018 Huddle.
-    All rights reserved.
-
     <footer>
-      <img src="./images/logo.svg" alt="huddle-logo" />
+      <!-- <div class="call-to-action">
+        <h1>Ready To Build Your Community?</h1>
+        <button class="pink-btn">Get Started For Free</button>
+      </div> -->
 
       <div class="info">
         <!-- Contact Information -->
         <address class="contact">
+          <!-- <img class="logo" src="./images/logo-white.svg" alt="huddle-logo" /> -->
           <ul>
             <li>
-              <img src="./images/icon-location.svg" alt="" />Lorem ipsum dolor
-              sit amet, consectetur adipisicing elit. Voluptatibus vitae quas
-              iusto obcaecati quod atque, iure quia corrupti sit dignissimos?
+              <div class="img-wrapper">
+                <img class="icon" src="./images/icon-location.svg" alt="" />
+              </div>
+              <a>This is a street address</a>
             </li>
             <li>
-              <img src="./images/icon-phone.svg" alt="" /><a
-                href="tel: +1543-123-4567"
-                >+1543-123-4567</a
-              >
+              <div class="img-wrapper">
+                <img class="icon" src="./images/icon-phone.svg" alt="" />
+              </div>
+              <a href="tel: +1543-123-4567">+1543-123-4567</a>
             </li>
             <li>
-              <img src="./images/icon-email.svg" alt="" /><a
-                href="mailto: example@huddle.com"
-                >example@huddle.com</a
-              >
+              <div class="img-wrapper">
+                <img class="icon" src="./images/icon-email.svg" alt="" />
+              </div>
+              <a href="mailto: example@huddle.com">example@huddle.com</a>
             </li>
           </ul>
         </address>
@@ -144,6 +157,8 @@
           >. Coded by <a href="#">Your Name Here</a>.
         </p>
       </div>
+      About Us What We Do FAQ Career Blog Contact Us &copy; Copyright 2018
+      Huddle. All rights reserved.
     </footer>
   </body>
 </html>
